@@ -1,0 +1,48 @@
+img{
+    width: 100%;
+}
+.logo{
+    width: 50px;
+}
+.nav-link{
+    color: blue;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.footer{
+    background-color: rgb(14, 14, 153);
+    color: white;
+    padding-top: 30px;
+}
+.ico{
+    color: white;
+    font-size: 30px;
+   margin: 20px;
+   margin-left: 0;
+   padding-top: 30px;
+   }
+   .ico:hover{
+    font-size: 40px;
+    transition: 0.5s;
+    color: rgb(157, 80, 229);
+}
+.prava{
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.passat{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.zoom:hover{
+    transform: scale(2);
+
+}
+.zoom{
+    transition: 2s;
+}
+.col-md-5{
+    overflow: hidden;
+}
