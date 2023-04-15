@@ -1,0 +1,62 @@
+body{
+    font-family: 'Exo 2', sans-serif;
+}
+.logo{
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+img{
+    width: 100%;
+}
+.big-photo{
+        background-image: url(banner.jpg);
+        height: 400px;
+        background-size: cover;
+        background-position: 50% 50%;
+        color: rgb(234, 234, 234); 
+ }
+ .nomer{
+    padding-top: 50px;
+ }
+ .kartinki{
+    padding-top: 20px;
+ }
+ .text{
+    text-align: center;
+    padding-top: 150px;
+ }
+ .hut{
+    background-image:linear-gradient(rgba(137, 205, 242, 0.388), rgba(246, 246, 246, 0.531)), url(the-hut-bg.png);
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: rgb(222, 222, 222); 
+    margin: 50px 0;
+ }
+ .footer{
+    background-color:#5B6460;
+    color: rgb(225, 247, 99);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ico{
+    color: rgb(225, 247, 99);
+    font-size: 30px;
+   margin: 20px;
+   margin-left: 0;
+   padding-top: 30px;
+   }
+   .ico:hover{
+    font-size: 40px;
+    transition: 0.5s;
+    color: rgb(193, 144, 239);
+   }
+   .bot{
+    background-image:url(the-area.png);
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: rgb(222, 222, 222); 
+    margin: 50px 0;
+   }
