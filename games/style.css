@@ -1,0 +1,64 @@
+body {
+    font-family: 'Philosopher', sans-serif;
+}
+
+nav {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.golova {
+    font-family: 'Philosopher', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.mine2 {
+    border-radius: 50%;
+
+}
+
+.mine {
+    padding-top: 50px;
+}
+
+.text {
+    padding-top: 50px;
+}
+
+.video {
+    padding-top: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fon1 {
+    background-color: rgb(135, 252, 129);
+    padding-bottom: 60px;
+}
+
+.fon2 {
+    background-color: rgb(246, 217, 113);
+    padding-bottom: 60px;
+}
+
+.fon3 {
+    background-color: rgb(205, 179, 221);
+    padding-bottom: 60px;
+}
+
+.fon4 {
+    background-color: rgb(184, 238, 98);
+    padding-bottom: 60px;
+}
+
+.fon5 {
+    background-color: rgb(160, 191, 245);
+    padding-bottom: 60px;
+}
+.text2{
+    padding-top: 130px;
+}
