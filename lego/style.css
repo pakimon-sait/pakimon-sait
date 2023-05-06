@@ -1,0 +1,58 @@
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+.big-photo{
+    background-image: url(1.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: rgb(234, 234, 234);
+    padding-top: 80px;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+} 
+nav img{
+    width: 80px;
+}
+.card img{
+    border-radius: 30px;
+}
+.card{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.nav-item{
+margin: 7px;
+background-color: rgb(160, 82, 82)
+}
+.nav-link{
+color: antiquewhite;
+}
+.istory, .istory1{
+    text-align: center;
+    padding-top: 40px;
+}
+.istory{
+    background-color:rgb(160, 82, 82) ;
+}
+.traktor{
+    background-image: url(4.jpg);
+        padding-top:6rem;
+        padding-bottom: 6rem;
+        align-items: center;
+}
+.traktor h3{
+    padding-left: 30px;
+}
+.list-group-item{ 
+    background-color: rgba(165, 42, 42, 0.396);
+}
+.oda{
+    padding-bottom: 50px;
+}
+
