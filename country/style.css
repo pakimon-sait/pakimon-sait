@@ -1,0 +1,17 @@
+img{
+    width: 100%;
+}
+.my-bg-1{
+    background-color: rgb(189, 222, 211);
+    padding: 30px;
+}
+.my-shadow{
+   margin-bottom: 20px;
+    box-shadow: 0px 3px 25px rgb(161, 218, 103);
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+.active{
+    font-weight: 600;
+}
