@@ -1,0 +1,75 @@
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+img{
+    width: 100%;
+}
+.logo{
+    width: 40px;
+}
+nav{
+    background-color: rgb(195, 232, 239);
+}
+.big-photo{
+    font-family: 'Yeseva One', cursive;
+    background-image: url(black-on-white_2.jpg);
+    text-align: center;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: rgb(234, 234, 234);
+    padding-top: 200px;
+}
+.text{
+    background-color: #a6d2d5;
+    padding: 30px;
+}
+.coladge{
+    background-image: url(collage.jpg);
+    background-size: cover;
+    padding: 50px;
+    font-size: 20px;
+}
+.coladge>blockquote{
+    background-color: rgba(255, 255, 255, 0.712) ;
+}
+.row-3{
+    background-image: url(phone-3.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.left{
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 10rem;
+    font-family: 'Yeseva One', cursive;
+}
+.right{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+.right>ul>li{
+    color: black;
+    font-size: 1.3rem;
+}
+.row-4{
+    background-color: #a6d2d5;
+}
+
+.big-fon{
+    background-image: url(forest.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.lorem{
+    margin: 50px 0;
+    background-color: rgba(255, 255, 255, 0.578);
+}
+.black-fon{
+    background-color: black;
+    color: wheat;
+    padding: 50px 0;
+    
+}
