@@ -1,0 +1,364 @@
+img {
+  width: 100%;
+}
+head{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.logo {
+  width: 60px;
+}
+.navbar{
+  background-color: rgba(255, 255, 255, 0.034);
+  border-radius: 10px;
+}
+.navbar-nav{
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+nav {
+  color: white;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+.gif{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.golova h1 {
+  font-size: 8vw;
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Playfair Display', serif;
+}
+
+.golova h2 {
+  padding-bottom: 40px;
+}
+
+.golova img {
+  width: 500px;
+  padding-top: 50px;
+
+}
+
+.pro-mene {
+  background-color: rgb(20, 20, 20);
+  box-sizing: border-box;
+  color: rgb(32, 32, 32);
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 9px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 19px;
+  text-align: left;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgb(0, 0, 0);
+}
+
+.link li{
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: list-item;
+  flex-wrap: wrap;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 100px;
+  list-style-type: none;
+  margin-bottom: 0px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 0px;
+  padding-bottom: 15px;
+  text-align: left;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.list-group-item,.list-group-item1,.list-group-item2, a{
+  color: rgb(53, 53, 53);
+}
+.list-group-item a:hover{
+  color: rgb(170, 42, 42);
+  transition: 1s;
+}
+.list-group-item1 a:hover{
+  color: rgb(243, 142, 9);
+  transition: 1s;
+}
+.list-group-item2 a:hover{
+  color: rgb(0, 132, 255);
+  transition: 1s;
+}
+.list-group-item3 a:hover{
+  color: rgba(151, 25, 255, 0.856);
+  transition: 1s;
+}
+.list-group-item4 a:hover{
+  color: rgb(102, 208, 240);
+  transition: 1s;
+}
+
+.link{
+  box-sizing: border-box;
+  color: rgb(32, 32, 32);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 24px;
+  list-style-type: none;
+  margin-block-end: 16px;
+  margin-block-start: 23px;
+  margin-bottom: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-top: 23px;
+  padding-bottom: 0px;
+  padding-inline-start: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-align: left;
+}
+
+.golova p {
+  padding-top: 50px;
+  font-size: 25px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.sun-moon p{
+  padding-left: 0px;
+}
+
+.card {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgb(145, 143, 143), 0px 0px 20px rgb(218, 58, 4);
+}
+.card .btn{
+  border: 1px solid white;
+}
+.col-sm-12.col-md-6.col-lg-4.col-xl-3{
+  padding: 30px 0;
+  padding-right: 20px;
+}
+.card img {
+  padding-bottom: 30px;
+  padding-top: -15px;
+}
+
+.links,
+.links1,
+.links2,
+.links3,
+.links4 {
+  color: azure;
+  background-color: brown;
+  padding: 10px;
+  margin: 60px;
+  transition: 1.5s;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 10px;}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.links:hover {
+  background-color: rgb(170, 217, 224);
+  color: rgb(107, 46, 11);
+  box-shadow: 0px 0px 50px rgb(10, 11, 98) inset;
+}
+
+.links4:hover {
+  background-color: rgb(18, 224, 111);
+  color: rgb(174, 178, 230);
+  box-shadow: 0px 0px 50px rgb(0, 43, 107) inset;
+}
+
+.links3:hover {
+  background-color: rgb(162, 27, 189);
+  color: rgb(233, 233, 233);
+  box-shadow: 0px 0px 50px rgb(10, 11, 98) inset;
+}
+
+.links2:hover {
+  background-color: rgb(33, 129, 9);
+  color: rgb(178, 228, 235);
+  box-shadow: 0px 0px 50px rgb(18, 70, 129) inset;
+}
+
+.links1:hover {
+  background-color: rgb(235, 163, 31);
+  color: rgb(56, 11, 70);
+  box-shadow: 0px 0px 10px rgb(162, 179, 140) inset;
+}
+
+.card h5 {
+  padding-bottom: 20px;
+}
+
+.svit {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 60px;
+  color: rgb(255, 204, 0);
+  text-shadow: 0px 0px 5px rgb(248, 132, 0), 0px 0px 50px rgb(162, 10, 2);
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;  z-index: 10;
+}
+
+.arrow-up a {
+  background-color: #65177b;
+  width: 50px;
+  height: 50px;
+  color: white;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.arrow-up a:hover {
+  background-color: rgb(182, 97, 18);
+  transition: 0.5s;
+}
+
+.come a {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 2px gray, 0px 0px 30px rgb(194, 29, 194);
+}
+
+.come {
+  padding-bottom: 50px;
+}
+
+.come a:hover {
+  color: #a9dfff;
+  transition: 0.5s;
+  text-shadow: 0px 0px 2px gray, 0px 0px 30px rgb(3, 11, 124);
+}
+
+.istory {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 60px;
+}
+
+.video {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.golova h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+}
+
+.ocean h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+
+.planets h4,p{
+  text-align: center;
+  padding-left: 50px;
+  margin: 10px;
+  padding-left: 0;
+}
+.planets p{
+  font-size: 20px;
+}
+
+.planets{
+ padding-top: 30px;
+ padding-bottom: 30px;
+ background-color: rgba(255, 255, 255, 0.203);
+ margin: 60px;
+ border-radius: 10px;
+}
+.planets img{
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.my-carousel {
+  padding-bottom: 50px;
+}
+
+.my-carousel .carousel-item {
+  max-height: 700px;
+}
+
+.my-carousel .carousel-item img {
+  object-fit: cover;
+}
+
+.oceans h3 {
+  text-align: center;
+}
+
+.ocean h4 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.oceans p,
+h3 {
+  padding-top: 15px;
+}
+
+.oceans {
+  margin-bottom: 50px;
+}
+
+.oceans img {
+  border-radius: 30px;
+}
+.countrie{
+  padding-bottom: 100px;
+}
+
+.card-1 p{
+  padding-left: 0px;
+  padding-top: 10px;
+}
+.card-1{
+  padding-bottom: 50px;
+}
+.card-10{
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
