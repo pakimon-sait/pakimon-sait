@@ -8,6 +8,7 @@ body {
   background-color: rgb(27, 27, 27);
   color: white;
   font-family: 'IBM Plex Sans', sans-serif;
+  user-select: none;
 }
 
 .logo {
