@@ -1,0 +1,108 @@
+body{
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+img{
+    width: 100%;
+}
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.336);
+    bottom: 1.5rem;
+    right: 0;
+    left: auto;
+}
+
+.cards{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.cards img{
+    display: block;
+    width: 30%;
+    margin:20px auto;
+}
+.cards1 img{
+    display: block;
+    margin:20px auto;
+}
+h2{
+    font-weight: 900;
+}
+.cards1{
+    box-shadow: 2px 2px 5px 5px rgba(83, 81, 81, 0.465);
+    border: 1px groove black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.cards1 p{
+    padding-top: 10px;
+}
+.fon{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.842),rgba(0, 0, 0, 0.466)), url(forest.png) ;
+    
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.button{
+  --c: #fff;
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    rgb(0, 78, 19);
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+  width: 80%;
+}
+
+.button:hover,
+.button:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.button{
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}
+
+.footer {
+    background-color: #010210;
+    padding: 30px 0;
+
+}
+
+.socio-link {
+    font-size: 2rem;
+    color: #d5d5d5;
+    margin: 10px;
+}
+
+.socio-link:hover {
+    color: rgb(124, 209, 204);
+    
+}
+.footer p{
+    color: #d5d5d5;
+}
