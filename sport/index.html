@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animate.css">
+    <title>Спорт</title>
+    <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/57add9b17c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrollreveal.min.js"></script>
+    <style>
+        .header {
+            background: linear-gradient(to bottom, rgb(177, 191, 199), rgb(179, 193, 200), rgb(40, 69, 82));
+        }
+
+        .info {
+            background: linear-gradient(to bottom, rgb(40, 69, 82), rgb(21, 33, 90), rgb(24, 3, 52));
+        }
+
+        .images {
+            border-radius: 50%;
+        }
+
+        .describe {
+            font-size: 20px;
+
+        }
+
+        .describe>ul {
+            list-style-type: none;
+        }
+
+        .describe>h3 {
+            margin: 20px;
+            padding-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .card {
+            width: 280px;
+            height: 360px;
+            padding: 2rem 1rem;
+            background: white;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 0px 0px 10px rgb(151, 183, 211), 0px 0px 20px rgb(46, 121, 179);
+            transition: 0.5s ease-in-out;
+            margin-bottom: 40px;
+        }
+
+        .card:hover {
+            transform: translateY(20px);
+        }
+
+        .card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(70, 70, 70, 0.637), rgba(23, 23, 23, 0.675));
+            z-index: 2;
+            transition: 1s all;
+            opacity: 0;
+        }
+
+        .card:hover:before {
+            opacity: 1;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .card .card-body {
+            position: relative;
+            z-index: 3;
+            color: white;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 1s all;
+        }
+
+        .card:hover .card-body {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        .card p {
+            font-weight: 500;
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+
+        .card h5 {
+            color: #f7ff8b;
+            font-weight: 900;
+            font-size: 25px;
+        }
+
+        .bestbtn {
+            border-radius: .25rem;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 400;
+            padding-left: 25px;
+            padding-right: 25px;
+            color: #fff;
+            -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+            clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+            height: 40px;
+            font-size: 0.7rem;
+            line-height: 14px;
+            letter-spacing: 1.2px;
+            transition: .2s .1s;
+            background-image: linear-gradient(90deg, #1c1c1c, #6220fb);
+            border: 0 solid;
+            overflow: hidden;
+        }
+
+        .bestbtn:hover {
+            cursor: pointer;
+            transition: all .3s ease-in;
+            padding-right: 30px;
+            padding-left: 30px;
+
+        }
+
+        .top-1 {
+            font-size: 50px;
+        }
+
+        .footer p {
+            color: #d5d5d5;
+        }
+
+        .footer {
+            background: linear-gradient(to bottom, rgb(24, 3, 52), rgb(1, 9, 43));
+            padding: 30px 0;
+
+        }
+
+        .socio {
+            font-size: 30px;
+            color: #d5d5d5;
+            margin: 10px;
+            transition: 1s;
+        }
+
+        .link-1:hover {
+            color: rgb(250, 59, 59);
+        }
+
+        .link-2:hover {
+            color: rgb(221, 133, 10);
+        }
+
+        .link-3:hover {
+            color: rgb(254, 0, 199);
+        }
+
+        .link-4:hover {
+            color: rgb(35, 130, 246);
+        }
+
+        .link-5:hover {
+            color: rgb(150, 4, 203);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">
+        <div class="move-top">
+            <p>⬆</p>
+        </div>
+    </a>
+    <div class="header">
+        <div class="container">
+            <h2 class="text-center p-5 top-1">СПОРТ - СПОСІБ ЖИТТЯ</h2>
+            <div class="row p-5">
+                <div class="col-md-6">
+                    <img class="images left-1" src="img/image1.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="right-1">Спорт: рушійна сила життя</h4>
+                    <p class="right-2">Спорт – це не просто фізичні вправи, це цілий світ, який захоплює мільйони людей
+                        по всій планеті.
+                        Він
+                        дарує нам не лише міцне тіло та бадьорий дух, але й вчить важливим життєвим урокам.</p>
+                    <p class="right-3">З раннього дитинства нас заохочують займатися спортом. Ми бігаємо, стрибаємо,
+                        граємо в м'яч, не
+                        замислюючись про те, скільки користі приносять ці прості дії. З роками вибір видів спорту стає
+                        ширшим, і кожен може знайти те, що йому до душі: командні ігри, де важливий дух єднання та
+                        взаємодопомоги, або індивідуальні змагання, де на першому місці сила волі та прагнення до
+                        перемоги.
+                    </p>
+                    <p class="right-4">Він вчить нас дисципліні та відповідальності. Регулярні тренування вимагають від
+                        нас самовіддачі
+                        та
+                        наполегливості. Ми ставимо перед собою цілі, долаємо труднощі, вчимося не здаватися і йти до
+                        кінця.
+                        Ці навички стають в нагоді не лише в спортзалі, але й в повсякденному житті.</p>
+                    <p class="right-5">Спорт – це невід'ємна частина здорового способу життя. Він зміцнює наше тіло,
+                        покращує роботу
+                        серцево-судинної системи та імунітету. Займаючись спортом, ми стаємо більш витривалими,
+                        покращуємо
+                        координацію рухів та загальне самопочуття.</p>
+                </div>
+            </div>
+            <div class="row p-5">
+                <div class="col-md-6">
+                    <h4 class="left-1">Спорт - це про те, щоб кинути виклик самому собі і стати кращою версією</h4>
+                    <p class="images left-2">Спорт є ключем до щасливого та повноцінного життя. Він дарує нам не лише
+                        здоров'я та красу, але й
+                        вчить важливим цінностям, таким як дружба, взаємодопомога, чесність та прагнення до перемоги.
+                        Завдяки спорту ми стаємо сильнішими не лише фізично, але й духовно.</p>
+                    <p class="images left-3">Розуміння спорту було б неповним, якби спорт розглядався тільки
+                        спеціалізовано - як вид і результат діяльності. Поняття «спорт» слід розглядати
+                        як багатофункціональне явище культури.</p>
+                    <p class="images left-4">Відкривайте для себе нові грані спортивного азарту, дізнавайтесь про
+                        неймовірні досягнення та
+                        надихайтесь прикладами кращих з кращих!
+                    </p>
+                    <p class="images left-5">Нехай цей сайт стане вашим компасом у світі спорту, де кожен день приносить
+                        нові емоції та
+                        враження!
+                    </p>
+                    <p class="text-warning left-5"><b>Занурюйтесь у світ спорту разом з нами!</b></p>
+                </div>
+                <div class="col-md-6">
+                    <img class="images right-1" src="img/image2.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 describe text-info">
+                    <h3 class="top-1">Сьогодні ви дізнаєтесь:</h3>
+                    <ul>
+                        <li class="right-3"><b>• Описи та історії про олімпійські види спорту.</b></li>
+                        <li class="left-4"><b>• Інформацію про відомих спортсменів:</b> їхні шляхи до успіху, рекорди та
+                            надихаючі
+                            історії.
+                        </li>
+                        <li class="right-5"><b>• Цікаві факти, фото та відео:</b> зануртеся у динаміку спортивних
+                            баталій та відчуйте
+                            азарт
+                            перемоги.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="container pt-5">
+            <h2 class="text-center text-white p-5 down-1">Дізнайтесь більше про олімпійські види спорту</h2>
+            <div class="row justify-content-center">
+                <div id="badminton" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0s" style="width: 18rem;">
+                        <img src="img/spots/official/img1.jpg" class="card-img-top " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Бадмінтон</h5>
+                            <p class="card-text">Бадмінто́н — спортивна гра, яка проводиться на невеликому майданчику,
+                                поділеному сіткою на 2 рівні частини. Бадмінтон — олімпійський вид спорту.</p>
+                            <a href="badminton.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="basketball" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.1s" style="width: 18rem;">
+                        <img src="img/spots/official/img2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Баскетбол</h5>
+                            <p class="card-text">Баскетбо́л — спортивна командна гра з м'ячем, який закидають руками в
+                                кільце із сіткою (кошик), закріпленою на щиті на висоті 3 метри 5 сантиметрів над
+                                майданчиком. Баскетбол є олімпійським видом спорту.</p>
+                            <a href="basketball.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="baseball" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.2s" style="width: 18rem;">
+                        <img src="img/spots/official/img3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Бейсбол</h5>
+                            <p class="card-text">Бейсбо́л — спортивна гра з м'ячем і битою. Гра відбувається між двома
+                                командами з дев'яти гравців, які по черзі грають у захисті та в нападі.</p>
+                            <a href="baseball.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="biathlon" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.3s" style="width: 18rem;">
+                        <img src="img/spots/official/img4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Біатлон</h5>
+                            <p class="card-text">Біатло́н — зимовий вид
+                                спорту, двоборство, що поєднує лижні перегони і стрільбу лежачи та стоячи на кількох
+                                вогневих рубежах з дрібнокаліберної гвинтівки.</p>
+                            <a href="biathlon.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="bobsled" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.4s" style="width: 18rem;">
+                        <img src="img/spots/official/img5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Бобслей</h5>
+                            <p class="card-text">Бобсле́й — вид санного спорту, швидкісне ковзання з гір по спеціально
+                                обладнаних льодових трасах на санях особливої конструкції, бобах, які мають керування і
+                                розраховані на 2—8 осіб. Ковзання йде по спеціальній снігово-льодовій доріжці.</p>
+                            <a href="bobsled.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="boxing" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.5s" style="width: 18rem;">
+                        <img src="img/spots/official/img6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Бокс</h5>
+                            <p class="card-text">Бокс — контактний вид спорту, в якому спортсмени наносять
+                                один одному удари кулаками в спеціальних рукавицях. Рефері контролює бій, який триває до
+                                12
+                                раундів. Перемога боксера у випадку, якщо суперник збитий з ніг і не може піднятся.</p>
+                            <a href="boxing.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="strugglefree" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.6s" style="width: 18rem;">
+                        <img src="img/spots/official/img7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Боротьба вільна</h5>
+                            <p class="card-text">Вільна боротьба — спортивне єдиноборство, вид боротьби, в основі якого
+                                лежить завдання спортсменів, які намагаються повалити один одного на землю та утримати
+                                на
+                                спині,
+                                використовуючи лише силу рук і корпусу.</p>
+                            <a href="strugglefree.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="grecoromanwrestling" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.7s" style="width: 18rem;">
+                        <img src="img/spots/official/img8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Боротьба греко-римська</h5>
+                            <p class="card-text">Боротьба греко-римська — Двоє спортсменів намагаються повалити один
+                                одного
+                                на землю та
+                                утримати на спині, використовуючи лише силу верхньої частини тіла.</p>
+                            <a href="grecoromanwrestling.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="weightlifting" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.1s" style="width: 18rem;">
+                        <img src="img/spots/official/img9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Важка атлетика</h5>
+                            <p class="card-text">Важка атлетика — силовий вид спорту у сучасних Олімпійських іграх, у
+                                якому
+                                атлет намагається підняти якомога важчу штангу. У сучасних Олімпійських іграх змагання з
+                                важкої атлетики поділяються на дві вправи — ривок, а також поштовх.</p>
+                            <a href="weightlifting.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cycling" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.2s" style="width: 18rem;">
+                        <img src="img/spots/official/img10.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Велосипедний спорт</h5>
+                            <p class="card-text">Велосипедний спорт - це переміщення по землі з використанням
+                                транспортних
+                                засобів (велосипедів), які урухомлює м'язова сила людини. Велоспорт - одна з популярних
+                                форм
+                                рухової активності, зміцнює легені, серце і звичайно, м'язи ніг.</p>
+                            <a href="cycling.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="rowingslalom" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.3s" style="width: 18rem;">
+                        <img src="img/spots/official/img11.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Веслувальний слалом</h5>
+                            <p class="card-text">Веслува́льний сла́лом - різновид спортивноговеслування, що полягає в
+                                проходженні на швидкість дистанції, яка визначається розташуванням воріт, які
+                                виставляються на спеціальному каналі.</p>
+                            <a href="rowingslalom.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="rowingacademic" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.4s" style="width: 18rem;">
+                        <img src="img/spots/official/img12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Веслування академічне</h5>
+                            <p class="card-text">Академі́чне веслува́ння — перегони на човнах, в яких спортсмени сидять
+                                спиною вперед, гребки веслами здійснюються за допомогою ніг, спини і рук.</p>
+                            <a href="rowingacademic.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="kayakingcanoeing" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.5s" style="width: 18rem;">
+                        <img src="img/spots/official/img13.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Веслування на байдарках і каное</h5>
+                            <p class="card-text">Веслування на байдарках і каное — веслувальний вид спорту, в якому
+                                використовуються човни двох типів: байдарки та каное. Є олімпійським видом спорту з 1936
+                                року. </p>
+                            <a href="kayakingcanoeing.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sailing" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.6s" style="width: 18rem;">
+                        <img src="img/spots/official/img14.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Вітрильний спорт</h5>
+                            <p class="card-text">Вітрильний спорт — вид спорту, в якому спортсмени змагаються,
+                                використовуючи переважно човни та судна, спеціальні сани для снігу, а також колісні
+                                човни,
+                                що рухаються по твердій поверхні.</p>
+                            <a href="sailing.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="waterpolo" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.7s" style="width: 18rem;">
+                        <img src="img/spots/official/img15.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Водне поло</h5>
+                            <p class="card-text">Во́дне по́ло, ватерпо́ло — командна спортивна гра в воді, в процесі
+                                якої
+                                спортсмени двох команд прагнуть закинути м'яч у ворота суперника і не пропустити у свої.
+                            </p>
+                            <a href="waterpolo.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="volleyball" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.1s" style="width: 18rem;">
+                        <img src="img/spots/official/img16.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Волейбол</h5>
+                            <p class="card-text">Волейбо́л — спортивна гра з м'ячем, у якій дві команди змагаються на
+                                спеціальному майданчику, розділеному сіткою. Волейбол є олімпійським видом спорту.</p>
+                            <a href="volleyball.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="beachvolleyball" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.2s" style="width: 18rem;">
+                        <img src="img/spots/official/img17.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Волейбол пляжний</h5>
+                            <p class="card-text">Пляжний волейбол — популярний вид спорту, гра на розділеному
+                                високою сіткою піщаному майданчику, в якому дві команди, що перебувають по різні боки
+                                сітки
+                                перекидають через неї м'яч.</p>
+                            <a href="beachvolleyball.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="handball" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.3s" style="width: 18rem;">
+                        <img src="img/spots/official/img18.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Гандбол</h5>
+                            <p class="card-text">Гандбол, або ручний м'яч — командна спортивна гра, олімпійський вид
+                                спорту.
+                                У гандбол грають на спеціальному майданчику між двома командами по сім спортсменів у
+                                кожній.
+                                Перемогу дає перевага в кількості закинутих м'ячів.</p>
+                            <a href="handball.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="gymnasticssport" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.4s" style="width: 18rem;">
+                        <img src="img/spots/official/img19.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Гімнастика спортивна</h5>
+                            <p class="card-text">Спортивна гімнастика — олімпійський вид спорту представлений як
+                                вільними
+                                вправами, так і окремими на спортивних приладах, який охоплює вправи на спритність,
+                                швидкість, гнучкість.</p>
+                            <a href="gymnasticssport.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="artisticgymnastics" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.5s" style="width: 18rem;">
+                        <img src="img/spots/official/img20.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Гімнастика художня</h5>
+                            <p class="card-text">Художня гімнастика — це складно-координаційний вид спорту, під музичний
+                                супровід, що виконує одна гімнастка, або команда із п'яти дівчат з кількома предметами
+                                по
+                                черзі: м'ячем, скакалками, булавами, обручем і стрічками.</p>
+                            <a href="artisticgymnastics.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="alpineskiing" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.6s" style="width: 18rem;">
+                        <img src="img/spots/official/img21.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Гірськолижний спорт</h5>
+                            <p class="card-text">Гірськолижний спорт — загальна назва для кількох зимових спортивних
+                                дисциплін, у яких спортсмени змагаються за найшвидший спуск із гори на лижах спеціально
+                                підготовленою трасою.</p>
+                            <a href="alpineskiing.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="golf" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.7s" style="width: 18rem;">
+                        <img src="img/spots/official/img22.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Гольф</h5>
+                            <p class="card-text">Гольф — спортивна гра, в якій окремі учасники або команди змагаються,
+                                заганяючи маленький м'яч для гольфу в спеціальні лунки ударами ключок, намагаючись
+                                пройти
+                                відведену дистанцію за мінімальне число ударів.</p>
+                            <a href="golf.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="judo" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.1s" style="width: 18rem;">
+                        <img src="img/spots/official/img23.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Дзюдо</h5>
+                            <p class="card-text">Дзюдо, джюдо — японське бойове мистецтво і вид спорту, що виникло на
+                                основі
+                                джиу-джитсу. Основні правила, принципи тренувань і проведення змагань були сформульовані
+                                Кано Дзіґоро.</p>
+                            <a href="judo.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="equestriansport" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.2s" style="width: 18rem;">
+                        <img src="img/spots/official/img24.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Кінний спорт</h5>
+                            <p class="card-text">Кінний спорт — включає різні види їзди на конях,
+                                змагання та різні вправи з верхової їзди. Під час їзди вершник взаємодіє з конем: керує
+                                ним
+                                за допомогою переміщення своєї ваги, руху ніг, натягом або ослабленням поводів, силою
+                                голосу.</p>
+                            <a href="equestriansport.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="skatingsport" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.3s" style="width: 18rem;">
+                        <img src="img/spots/official/img25.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ковзанярський спорт</h5>
+                            <p class="card-text">Ковзанярський спорт — загальна назва для спортивних дисциплін, в яких
+                                атлети змагаються на швидкість подолання певної дистанції на ковзанах.</p>
+                            <a href="skatingsport.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="curling" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.4s" style="width: 18rem;">
+                        <img src="img/spots/official/img26.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Керлінг</h5>
+                            <p class="card-text">Ке́рлінг — олімпійський вид спорту, командна спортивна гра на льодовому
+                                майданчику. За своїм принципом гра подібна до боулінгу на траві. Гра складна, і за
+                                технікою,
+                                і стратегічно.</p>
+                            <a href="curling.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="athletics" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.5s" style="width: 18rem;">
+                        <img src="img/spots/official/img27.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Легка атлетика</h5>
+                            <p class="card-text">Легка́ атле́тика — олімпійський вид спорту, який об'єднує спортивні
+                                дисципліни, що включають змагання з бігу, стрибків, метань та спортивної ходьби.</p>
+                            <a href="athletics.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="skiduel" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.6s" style="width: 18rem;">
+                        <img src="img/spots/official/img28.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Лижне двоборство</h5>
+                            <p class="card-text">Лижне двоборство або нордична комбінація — зимовий олімпійський вид
+                                спорту,
+                                який охоплює стрибки з трампліна і лижний крос.</p>
+                            <a href="skiduel.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="skiraces" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.7s" style="width: 18rem;">
+                        <img src="img/spots/official/img29.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Лижні гонки</h5>
+                            <p class="card-text">Лижні перегони — зимовий олімпійський вид спорту, змагання на подолання
+                                певної дистанції на швидкість, рухаючись на лижах і відштовхуючись лижними палицями.</p>
+                            <a href="skiraces.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="swimming" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.1s" style="width: 18rem;">
+                        <img src="img/spots/official/img30.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Плавання</h5>
+                            <p class="card-text">Пла́вання — вид спорту, мета якого якнайшвидше проплисти зазначену
+                                відстань, не порушуючи при цьому техніки способу.</p>
+                            <a href="swimming.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="synchronizedswimming" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.2s" style="width: 18rem;">
+                        <img src="img/spots/official/img31.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Плавання синхронне</h5>
+                            <p class="card-text">Артистичне плавання — водний вид спорту, пов'язаний із виконанням у
+                                воді
+                                різноманітних фігур під музику. Артистичне плавання — один з найбільш витончених та
+                                елегантних видів спорту.</p>
+                            <a href="synchronizedswimming.html"><button class="bestbtn" role="button"><span
+                                        class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="rugby" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.3s" style="width: 18rem;">
+                        <img src="img/spots/official/img32.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Регбі</h5>
+                            <p class="card-text">Реґбі — олімпійський вид спорту, спортивна командна гра, в яку грають
+                                на
+                                прямокутному полі м'ячем овальної форми, різновид футболу.</p>
+                            <a href="rugby.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="toboggan" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.4s" style="width: 18rem;">
+                        <img src="img/spots/official/img33.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Санний спорт</h5>
+                            <p class="card-text">Са́нний спорт — зимовий олімпійський вид спорту, спуск на швидкість
+                                спеціально підготовленою трасою на санях. Один або два саночники під час спуску
+                                розташовуються на санях горілиць.</p>
+                            <a href="toboggan.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="surfing" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.5s" style="width: 18rem;">
+                        <img src="img/spots/official/img34.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Серфінг</h5>
+                            <p class="card-text">Серфінг — водний вид спорту, особливо популярний у Каліфорнії (США) і
+                                на
+                                Гаваях. Завдання спортсмена — піймати хвилю, що йде до берега, і проїхати на її гребені
+                                на
+                                спеціальній плоскій дошці з невеликим кілем.</p>
+                            <a href="surfing.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="rockclimbing" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.6s" style="width: 18rem;">
+                        <img src="img/spots/official/img35.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Скелелазіння</h5>
+                            <p class="card-text">Скелелазіння — олімпійський вид спорту, який полягає у вільному лазінні
+                                по
+                                природному або штучному рельєфу. Це самостійний вид спорту, який вийшов
+                                з альпінізму й нерозривно пов'язаний з ним.</p>
+                            <a href="rockclimbing.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="skeleton" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.7s" style="width: 18rem;">
+                        <img src="img/spots/official/img36.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Скелетон</h5>
+                            <p class="card-text">Скелето́н — зимовий олімпійський вид спорту, швидкісний спуск крижаною
+                                трасою на спеціальних санях без кермового керування. Спортсмен,
+                                лежачи обличчям вниз, керує скелетоном за допомогою рухів головою.</p>
+                            <a href="skeleton.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="snowboarding" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.1s" style="width: 18rem;">
+                        <img src="img/spots/official/img37.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Сноубординг</h5>
+                            <p class="card-text">Сноубординг — олімпійський вид спорту, що полягає в спуску із
+                                засніжених
+                                схилів і гір на спеціальному снаряді — сноуборді. Спочатку сноубординг був винятково
+                                зимовим
+                                видом спорту, але згодом окремі екстремали освоїли його влітку.</p>
+                            <a href="snowboarding.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="softball" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.2s" style="width: 18rem;">
+                        <img src="img/spots/official/img38.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Софтбол</h5>
+                            <p class="card-text">Софтбол — різновид бейсболу, в який грають більшим за розміром м'ячем,
+                                ніж
+                                у бейсболі. У цьому виді бейсболу свої правила: подача м'яча така, що знижує його
+                                швидкість
+                                у польоті, а сама гра триває сім періодів.</p>
+                            <a href="softball.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="trampolinejumping" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.3s" style="width: 18rem;">
+                        <img src="img/spots/official/img39.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Стрибки на батуті</h5>
+                            <p class="card-text">Стрибки на батуті — олімпійський вид спорту, в якому гімнасти виконують
+                                акробатичні трюки підстрибуючи на батуті.</p>
+                            <a href="trampolinejumping.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="skijumpingspringboard" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.4" style="width: 18rem;">
+                        <img src="img/spots/official/img40.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Стрибки на лижах з трампліна</h5>
+                            <p class="card-text">Стри́бки з трамплі́на — зимовий олімпійський вид спорту, стрибки на
+                                лижах
+                                зі спеціального трампліна на схилі гори. Стрибок оцінюється за дальністю і якістю.</p>
+                            <a href="Skijumpingspringboard.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="jumpingwater" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.5" style="width: 18rem;">
+                        <img src="img/spots/official/img41.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Стрибки у воду</h5>
+                            <p class="card-text">Стрибки́ у во́ду — один з водних видів спорту. На змаганнях виконуються
+                                стрибки з трампліна і вишки. Під час стрибка спортсмени виконують ряд акробатичних дій.
+                            </p>
+                            <a href="jumpingwater.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="archery" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.6s" style="width: 18rem;">
+                        <img src="img/spots/official/img42.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Стрільба з лука</h5>
+                            <p class="card-text">Стрільба з лука — мистецтво та спорт, що полягає у вмінні
+                                стріляти з лука у ціль стрілами. Історично стрільба з лука
+                                використовувалася для полювання і бойових дій.</p>
+                            <a href="archery.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="bulletshooting" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.7s" style="width: 18rem;">
+                        <img src="img/spots/official/img43.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Стрільба кульова</h5>
+                            <p class="card-text">Кульова стрільба — один з підвидів стрілецького спорту. На відміну від
+                                інших видів спорту, де спортсмени зустрічаються у поєдинках один з одним, стрілець веде
+                                найважчий бій. Шлях до успіху
+                                залежить від вміння психологічно налаштовуватись.</p>
+                            <a href="bulletshooting.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="benchshooting" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.1s" style="width: 18rem;">
+                        <img src="img/spots/official/img44.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Стрільба стендова</h5>
+                            <p class="card-text">Стендова стрільба — один з підрозділів стрілецького спорту. Змагання зі
+                                стендової стрільби проводяться на відкритих стрільбищах. Стрільба ведеться з
+                                гладкоствольних
+                                рушниць дробовими зарядами по спеціальних мішенях-тарілочках.</p>
+                            <a href="benchshooting.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="modernpentathlon" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.2s" style="width: 18rem;">
+                        <img src="img/spots/official/img45.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Сучасне п'ятиборство</h5>
+                            <p class="card-text">Суча́сне п'ятиборство — олімпійський вид спорту, який охоплює змагання
+                                зі
+                                стрільби, фехтування, кінного спорту, плавання та бігу — дисциплін, неодмінних для
+                                офіцера.</p>
+                            <a href="modernpentathlon.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="tennis" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.3s" style="width: 18rem;">
+                        <img src="img/spots/official/img46.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Теніс</h5>
+                            <p class="card-text">Те́ніс — вид спорту, у якому грають двоє гравців один
+                                проти одного, або дві команди по два гравці в кожній, команда проти команди, на
+                                майданчику —
+                                корті, поділеному навпіл поперечною сіткою.</p>
+                            <a href="tennis.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabletennis" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.4s" style="width: 18rem;">
+                        <img src="img/spots/official/img47.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Теніс настільний</h5>
+                            <p class="card-text">Настільний теніс — олімпійський вид спорту, у якому використовують
+                                спеціальні ракетки та ігровий стіл, розмежований сіткою навпіл. Гра може проходити між
+                                двома
+                                суперниками або двома парами суперників.</p>
+                            <a href="tabletennis.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="triathlon" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.5s" style="width: 18rem;">
+                        <img src="img/spots/official/img48.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Триатлон</h5>
+                            <p class="card-text">Тріатлон — олімпійський вид спорту, який включає у себе три складові:
+                                плавання, їзду на велосипеді та біг.</p>
+                            <a href="triathlon.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="taekwondo" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.6s" style="width: 18rem;">
+                        <img src="img/spots/official/img49.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Тхеквондо</h5>
+                            <p class="card-text">Тхеквондо — бойове мистецтво, олімпійський вид спорту та національний
+                                вид
+                                спорту в Кореї. Тхеквондо є одним з найбільш систематизованих і науково обґрунтованих
+                                бойових мистецтв світу.</p>
+                            <a href="taekwondo.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="fencing" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.7s" style="width: 18rem;">
+                        <img src="img/spots/official/img50.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Фехтування</h5>
+                            <p class="card-text">Спортивне фехтування - один із п'яти видів спорту, що входять до
+                                програми
+                                всіх літніх Олімпійських ігор сучасності. Залежно від використовуваної зброї
+                                підрозділяється
+                                фехтування на рапірах, фехтування на шаблях та фехтування на шпагах.</p>
+                            <a href="fencing.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="figureskating" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.1s" style="width: 18rem;">
+                        <img src="img/spots/official/img51.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Фігурне катання на ковзанах</h5>
+                            <p class="card-text">Фігу́рне ката́ння, фігурне ко́взання — зимовий вид спорту, у якому
+                                спортсмени переміщуються на ковзанах по льоду з виконанням додаткових елементів,
+                                найчастіше
+                                під музику.</p>
+                            <a href="figureskating.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="freestyle" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.2s" style="width: 18rem;">
+                        <img src="img/spots/official/img52.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Фристайл</h5>
+                            <p class="card-text">Фристайл — зимовий олімпійський вид спорту, загальна назва для
+                                різноманітних дисциплін, в яких лижники змагаються не тільки на швидкість проходження
+                                певної
+                                дистанції, а й у виконанні лижних трюків.</p>
+                            <a href="freestyle.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="football" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.3s" style="width: 18rem;">
+                        <img src="img/spots/official/img53.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Футбол</h5>
+                            <p class="card-text">Футбол — командний вид спорту, в який грають дві команди по одинадцять
+                                гравців зі сферичним м'ячем. Близько 250 мільйонів чоловіків і жінок із більш ніж 200
+                                країн
+                                грають у футбол, що робить його найпопулярнішим у світі видом спорту.</p>
+                            <a href="football.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="icehockey" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.4s" style="width: 18rem;">
+                        <img src="img/spots/official/img54.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Хокей з шайбою</h5>
+                            <p class="card-text">Хоке́й із ша́йбою, кана́дський хоке́й або просто: хоке́й, також го́кей,
+                                діал. гакі́вка, канадійська гаківка — гра на льодовому майданчику, в якій дві команди
+                                намагаються ключками закинути круглу шайбу у ворота суперника, які захищає воротар.</p>
+                            <a href="icehockey.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="grasshockey" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.5s" style="width: 18rem;">
+                        <img src="img/spots/official/img55.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Хокей на траві</h5>
+                            <p class="card-text">Хоке́й на траві́ — командна спортивна гра на спеціально розміченому
+                                майданчику 81-91×50-55 м протягом 60 хвилин. Спортивні снаряди — ключка і м'яч.</p>
+                            <a href="grasshockey.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="shorttrack" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card animate__zoomIn wow animate__animated" data-wow-delay="0.6s" style="width: 18rem;">
+                        <img src="img/spots/official/img56.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Шорт-трек</h5>
+                            <p class="card-text">Шорт-трек — зимовий олімпійський вид спорту, змагання з бігу на
+                                ковзанах на
+                                хокейному майданчику. На відміну від бігу на ковзанах на великих ковзанках, де
+                                спортсмени
+                                виходять на дистанцію парами.</p>
+                            <a href="shorttrack.html"><button class="bestbtn" role="button"><span class="text">Дізнатися
+                                        більше</span></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Неолімпійські та національні види спорту -->
+    <div class="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-6">
+                    <a href="https://www.youtube.com/channel/UCKb813WjcGj_30SUgVYroig" class="socio link-1 top-1">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rums_322/?hl=ru" class="socio link-2 top-2">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@rums032" class="socio link-3 top-3">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.facebook.com/roman.orliuk.3" class="socio link-4 top-4">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitch.tv/rumsssssss" class="socio link-5 top-5">
+                        <i class="fa-brands fa-twitch"></i>
+                    </a>
+                </div>
+                <div class="col-sm-6 text-md-end right-1 pt-3">
+                    <p><i class="fa-solid fa-copyright me-2"></i>Всі права захищено законом 2024 року</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

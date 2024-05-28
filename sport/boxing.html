@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animate.css">
+    <title>Бокс</title>
+    <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="scrollreveal.min.js"></script>
+    <style>
+        select:focus {
+            outline: none;
+            box-shadow: 0px 2px 5px gray;
+        }
+
+        option {
+            background-color: rgb(151, 17, 44);
+            color: white;
+        }
+
+        .fixed-fon {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-image: url(img/6/big-img-1.jpg);
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            background-size: cover;
+            background-position: 50% 50%;
+            transition: 1s;
+        }
+
+        .img-f {
+            display: none;
+        }
+
+        .p-1 {
+            background-color: #ccc;
+            padding: 20px;
+        }
+
+        .screen {
+            height: 200vh;
+        }
+
+        .container {
+            background: rgba(43, 43, 43, 0.771);
+            color: white;
+        }
+
+        ol {
+            list-style-type: none;
+        }
+
+        .boxing {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .left {
+            text-align: center;
+            justify-content: space-around;
+        }
+
+        .right {
+            text-align: center;
+        }
+
+        select {
+            padding: 14px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(182, 115, 240, 0.258);
+            font-size: 17px;
+        }
+
+        .info {
+            font-weight: 900;
+            font-size: 1.15em;
+            color: rgb(48, 112, 192);
+            text-align: start;
+        }
+
+        .info p {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .span {
+            display: block;
+        }
+
+        .inf {
+            color: rgb(3, 255, 3);
+        }
+
+        .inf1 {
+            color: rgb(254, 43, 43);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">
+        <div class="move-top">
+            <p>⬆</p>
+        </div>
+    </a>
+
+    <div class="fixed-fon">
+        <img class="img-f" src="img/6/big-img-1.jpg" alt="">
+        <img class="img-f" src="img/6/big-img-2.jpg" alt="">
+        <img class="img-f" src="img/6/big-img-3.jpg" alt="">
+        <img class="img-f" src="img/6/big-img-4.jpg" alt="">
+        <img class="img-f" src="img/6/big-img-5.jpg" alt="">
+        <img class="img-f" src="img/6/big-img-6.jpg" alt="">
+    </div>
+    <div class="container">
+        <h2 class="text-center p-5 name top-1">БОКС</h2>
+        <div class="come pb-2 down-1">
+            <a href="index.html#boxing">
+                <h4>назад</h4>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-md-6 p-5">
+                <h4 class="text-info p-2 right-1">Бокс</h4>
+                <p class="right-2">Бокс (фр. boxe — «бокс» та boxeur — «боксер» від англ. boxing — «удари», «биття»,
+                    «бокс», to box — «битися на рингу», «боксувати») — контактний вид спорту, єдиноборство, в якому
+                    спортсмени наносять один одному удари кулаками в спеціальних рукавичках. Рефері контролює бій, який
+                    триває до 12 раундів. Перемога боксера у випадку, якщо суперник збитий з ніг і не може піднятися
+                    протягом десяти секунд (нокаут) або якщо він отримав травму, яка не дозволяє продовжувати бій
+                    (технічний нокаут). Якщо після встановленої кількості раундів поєдинок не був припинений, то
+                    переможець визначається оцінками суддів.
+                </p>
+                <p class="right-3">Найбільш ранні свідоцтва подібних змагань відображені ще на шумерських, єгипетських і
+                    мінойських
+                    рельєфах. Турніри з кулачних боїв, що нагадує бокс, проходили ще в Стародавній Греції.
+                    По-справжньому бокс став спортивним єдиноборством в 688 році до н. е., коли кулачні бої були вперше
+                    включені в програму античних Олімпійських ігор. Сучасний бокс зародився в Англії на початку XVIII
+                    століття.</p>
+                <p class="right-4">У деяких країнах існують власні різновиди боксу (французький бокс (симбіоз савата,
+                    англійського боксу
+                    і фехтування на тростинах) у Франції, летхвей в М'янмі, муай-тай в Таїланді), тому часто
+                    використовується термін «англійський бокс».</p>
+                <p class="right-5"><b>Бокс є олімпійським видом спорту.</b></p>
+            </div>
+            <div class="col-md-6 p-5">
+            </div>
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6 p-5">
+            </div>
+            <div class="col-md-6 p-5">
+                <h4 class="text-info p-2 left-1">Історія</h4>
+                <p class="left-2">Перше зображення бою було зроблено в шумерській печері в третьому тисячолітті до н.
+                    е., а давньоєгипетський рельєф другого тисячоліття до н. е. зобразив уже не тільки боксерів, а й
+                    глядачів. Але обидва бійця б'ються голіруч. У 1927 році американський археолог Спенсер виявив у
+                    Багдаді кам'яні плити з малюнком, на якому дві людини готуються до поєдинку. Прийнято вважати, що
+                    вік цієї знахідки — 7000 років.
+                </p>
+                <p class="left-3"> Кулачні бої також описувалися в давніх індійських текстах: у Ведах, Рамаяні,
+                    Махабхараті. Свідоцтва
+                    існування боксу були знайдені і під час розкопок у містах Мохенджо-Даро і Хараппа.
+                </p>
+                <p class="left-4">
+                    Бобслей набув поширення в ряді країн Європи, де стали проводитися змагання, а потім і національні
+                    чемпіонати з цього виду спорту. В Австрії вони проводяться з 1908 року, а в Німеччині — з 1910 року.
+                </p>
+                <p class="left-5"> Перші знахідки, що підтверджують боксування в рукавичках, датовані 1500—900 роками до
+                    нашої ери, на
+                    Криті й у горах Сардинії (2000—1000 до н. е.).</p>
+            </div>
+        </div>
+    </div>
+    <div class="container boxing">
+        <div class="row p-2">
+            <h2 class="text-center text-warning p-5">Порівняйте боксерів</h2>
+            <div class="col-md-6 pe-md-4">
+                <div class="left">
+                    <h3 class="text-center pb-3"><b>Оберіть боксера</b></h3>
+                    <select id="select-left" class="left mb-5">
+                        <option value="CharlieEdwards">Чарлі Едвардс</option>
+                        <option value="SunnyEdwards">Санні Едвардс</option>
+                        <option value="CarlFrampton">Карл Фремптон</option>
+                        <option value="LeeMcgregor">Ли Макгрегор</option>
+                        <option value="JorgeLinares">Хорхе Лінарес</option>
+                        <option value="KidGalahad">Кід Галахед</option>
+                        <option value="HopeyPrice">Хоуп Прайс</option>
+                        <option value="ScottQuigg">Скотт Куігг</option>
+                        <option value="JonoCarroll">Джоно Керрол</option>
+                        <option value="AnthonyCrolla">Ентоні Кролла</option>
+                        <option value="RyanGarcia">Райан Гарсія</option>
+                        <option value="GervontaDavis">Джервонта Девіс</option>
+                        <option value="ArturoGatti">Артуро Гатті</option>
+                        <option value="JordanGill">Джордан Гілл</option>
+                        <option value="KevinKelley">Кевін Келлі</option>
+                        <option value="VasiliyLomachenko">Василь Ломаченко</option>
+                        <option value="JoshWarrington">Джош Уоррінгтон</option>
+                        <option value="TerenceCrawford">Теренс Кроуфорд</option>
+                        <option value="RickyHatton">Ріккі Хаттон</option>
+                        <option value="AmirKhan">Амір Хан</option>
+                        <option value="RayRobinson">Шугар Рей Робінсон</option>
+                        <option value="DaltonSmith">Далтон Сміт</option>
+                        <option value="JoshTaylor">Джош Тейлор</option>
+                        <option value="MickyWard">Міккі Уорд</option>
+                        <option value="SaulAlvarez">Сауль Альварес</option>
+                        <option value="KellBrook">Келл Брук</option>
+                        <option value="ShawnPorter">Шон Портер</option>
+                        <option value="NigelBenn">Найджел Бенн</option>
+                        <option value="JoeCalzaghe">Джо Кальзаге</option>
+                        <option value="ConnorBenn">Конор Бенн</option>
+                        <option value="LyndonArthur">Ліндон Артур</option>
+                        <option value="RoyJones">Рой Джонс</option>
+                        <option value="OleksandrUsyk">Олександр Усик</option>
+                        <option value="AnthonyJoshua">Ентоні Джошуа</option>
+                        <option value="DanielDubois">Даніель Дюбуа</option>
+                        <option value="MuhammadAli">Мухаммед Алі</option>
+                        <option value="TysonFury">Тайсон Ф'юрі</option>
+                        <option value="VitaliKlitschko">Віталій Кличко</option>
+                        <option value="VolodymyrKlitschko">Володимир Кличко</option>
+                        <option value="TysonFury">Тайсон Ф'юрі</option>
+                        <option value="LarryHolmes">Ларрі Холмс</option>
+                        <option value="DeontayWilder">Деонтей Уайлдер</option>
+                        <option value="MikeTyson">Майк Тайсон</option>
+                        <option value="JakePaul">Джейк Пол</option>
+                        <option value="EvanderHolyfield">Евандер Холіфілд</option>
+                        <option value="LennoxLewis">Леннокс Льюїс</option>
+                    </select>
+                    <div class="info">
+                        <img class="option-img opt-img-left p-5" src="" alt="">
+                        <p><span class="info-text">Ім'я:</span><span class="name-left inf"></span></p>
+                        <p><span class="info-text">Дата:</span><span class="date-left inf"></span></p>
+                        <p><span class="info-text">Національність:</span><span class="nationality-left inf"></span></p>
+                        <p><span class="info-text">Бойова стійка:</span><span class="stance-left inf"></span></p>
+                        <p><span class="info-text">Вагова категорія:</span><span class="category-left inf"></span></p>
+                        <p><span class="info-text">Вага тіла:</span><span class="weight-left inf"></span></p>
+                        <p><span class="info-text">Зріст:</span><span class="height-left inf"></span></p>
+                        <p><span class="info-text">Розмах рук:</span><span class="arm-left inf"></span></p>
+                        <p><span class="info-text">Статистика:</span><span class="stats-left inf"></span></p>
+                        <p><span class="info-text">Рейтинг:</span><span class="rank-left inf"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ps-md-4">
+                <div class="right">
+                    <h3 class="text-center pb-3"><b>Оберіть боксера</b></h3>
+                    <select id="select-right" class="right mb-5">
+                        <option value="CharlieEdwards">Чарлі Едвардс</option>
+                        <option selected value="SunnyEdwards">Санні Едвардс</option>
+                        <option value="CarlFrampton">Карл Фремптон</option>
+                        <option value="LeeMcgregor">Ли Макгрегор</option>
+                        <option value="JorgeLinares">Хорхе Лінарес</option>
+                        <option value="KidGalahad">Кід Галахед</option>
+                        <option value="HopeyPrice">Хоуп Прайс</option>
+                        <option value="ScottQuigg">Скотт Куігг</option>
+                        <option value="JonoCarroll">Джоно Керрол</option>
+                        <option value="AnthonyCrolla">Ентоні Кролла</option>
+                        <option value="RyanGarcia">Райан Гарсія</option>
+                        <option value="GervontaDavis">Джервонта Девіс</option>
+                        <option value="ArturoGatti">Артуро Гатті</option>
+                        <option value="JordanGill">Джордан Гілл</option>
+                        <option value="KevinKelley">Кевін Келлі</option>
+                        <option value="VasiliyLomachenko">Василь Ломаченко</option>
+                        <option value="JoshWarrington">Джош Уоррінгтон</option>
+                        <option value="TerenceCrawford">Теренс Кроуфорд</option>
+                        <option value="RickyHatton">Ріккі Хаттон</option>
+                        <option value="AmirKhan">Амір Хан</option>
+                        <option value="RayRobinson">Шугар Рей Робінсон</option>
+                        <option value="DaltonSmith">Далтон Сміт</option>
+                        <option value="JoshTaylor">Джош Тейлор</option>
+                        <option value="MickyWard">Міккі Уорд</option>
+                        <option value="SaulAlvarez">Сауль Альварес</option>
+                        <option value="KellBrook">Келл Брук</option>
+                        <option value="ShawnPorter">Шон Портер</option>
+                        <option value="NigelBenn">Найджел Бенн</option>
+                        <option value="JoeCalzaghe">Джо Кальзаге</option>
+                        <option value="ConnorBenn">Конор Бенн</option>
+                        <option value="LyndonArthur">Ліндон Артур</option>
+                        <option value="RoyJones">Рой Джонс</option>
+                        <option value="OleksandrUsyk">Олександр Усик</option>
+                        <option value="AnthonyJoshua">Ентоні Джошуа</option>
+                        <option value="DanielDubois">Даніель Дюбуа</option>
+                        <option value="MuhammadAli">Мухаммед Алі</option>
+                        <option value="TysonFury">Тайсон Ф'юрі</option>
+                        <option value="VitaliKlitschko">Віталій Кличко</option>
+                        <option value="VolodymyrKlitschko">Володимир Кличко</option>
+                        <option value="TysonFury">Тайсон Ф'юрі</option>
+                        <option value="LarryHolmes">Ларрі Холмс</option>
+                        <option value="DeontayWilder">Деонтей Уайлдер</option>
+                        <option value="MikeTyson">Майк Тайсон</option>
+                        <option value="JakePaul">Джейк Пол</option>
+                        <option value="EvanderHolyfield">Евандер Холіфілд</option>
+                        <option value="LennoxLewis">Леннокс Льюїс</option>
+                    </select>
+                    <div class="info">
+                        <img class="option-img opt-img-right p-5" src="" alt="">
+                        <p><span class="info-text">Ім'я:</span><span class="name-right inf1"></span></p>
+                        <p><span class="info-text">Дата:</span><span class="date-right inf1"></span></p>
+                        <p><span class="info-text">Національність:</span><span class="nationality-right inf1"></span>
+                        </p>
+                        <p><span class="info-text">Бойова стійка:</span><span class="stance-right inf1"></span></p>
+                        <p><span class="info-text">Вагова категорія:</span><span class="category-right inf1"></span></p>
+                        <p><span class="info-text">Вага тіла:</span><span class="weight-right inf1"></span></p>
+                        <p><span class="info-text">Зріст:</span><span class="height-right inf1"></span></p>
+                        <p><span class="info-text">Розмах рук:</span><span class="arm-right inf1"></span></p>
+                        <p><span class="info-text">Статистика:</span><span class="stats-right inf1"></span></p>
+                        <p><span class="info-text">Рейтинг:</span><span class="rank-right inf1"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Неолімпійські та національні види спорту -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script>
+        let i = 0;
+
+        function changeFon(img, div) {
+            div.style.backgroundImage = `url( ${img[i].src} )`;
+            i++;
+            if (i >= img.length) {
+                i = 0
+            }
+        }
+        let divF = document.querySelector('.fixed-fon');
+        let imgArr = document.querySelectorAll('.img-f')
+
+        setInterval(() => {
+            changeFon(imgArr, divF)
+        }, 3000);
+
+    </script>
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        let box = [
+            {
+                name: 'CharlieEdwards',
+                normalname: 'Чарлі Едвардс',
+                date: '8 лютого 1993 р. (31 рік)',
+                nationality: 'Англія, Великобританія',
+                stance: 'Лівостороння',
+                category: 'Найлегша вага',
+                weight: '53 кг.',
+                height: '168 см.',
+                arm: '168 см.',
+                stats: '17 - 1',
+                rank: 80,
+                img: 'img/6/box1.jpg',
+            },
+            {
+                name: 'SunnyEdwards',
+                normalname: 'Санні Едвардс',
+                date: '1 січня 1996 р. (28 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Найлегша вага',
+                weight: '53 кг.',
+                height: '160 см.',
+                arm: '152 см.',
+                stats: '20 - 1',
+                rank: 83,
+                img: 'img/6/box2.jpg',
+            },
+            {
+                name: 'CarlFrampton',
+                normalname: 'Санні Едвардс',
+                date: '21 лютого 1987 р. (вік 37 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Напівлегка вага , Друга легка вага , Легка вага , Друга напівлегка вага',
+                weight: '55 кг.',
+                height: '165 см.',
+                arm: '157 см.',
+                stats: '28 - 3',
+                rank: 82,
+                img: 'img/6/box3.jpg',
+            },
+            {
+                name: 'LeeMcgregor',
+                normalname: 'Лі Макгрегор',
+                date: '24 грудня 1996 р. (вік 27 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Найлегша вага',
+                weight: '55 кг.',
+                height: '171 см.',
+                arm: '171 см.',
+                stats: '12 - 1 - 1',
+                rank: 79,
+                img: 'img/6/box4.jpg',
+            },
+            {
+                name: 'JorgeLinares',
+                normalname: 'Хорхе Лінарес',
+                date: '22 серпня 1985 р. (вік 38 років)',
+                nationality: 'Венесуела',
+                stance: 'Лівостороння стійка',
+                category: 'Легка вага , Напівлегка вага , Перша напівсередня вага , Друга напівлегка вага',
+                weight: '53 кг.',
+                height: '173 см.',
+                arm: '175 см.',
+                stats: '47 - 9',
+                rank: 83,
+                img: 'img/6/box5.jpg',
+            },
+            {
+                name: 'KidGalahad',
+                normalname: 'Кід Галахед',
+                date: '3 березня 1990 р. (вік 34 роки)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Напівлегка вага , Легка вага , Друга найлегша вага',
+                weight: '53 кг.',
+                height: '169 см.',
+                arm: '170 см.',
+                stats: '28 - 3',
+                rank: 79,
+                img: 'img/6/box6.jpg',
+            },
+            {
+                name: 'HopeyPrice',
+                normalname: 'Іван Хоуп Прайс',
+                date: '6 березня 2000 р. (вік 24 роки)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Легка вага',
+                weight: '53 кг.',
+                height: '174 см.',
+                arm: '178 см.',
+                stats: '12 - 0 - 0',
+                rank: 72,
+                img: 'img/6/box7.jpg',
+            },
+            {
+                name: 'ScottQuigg',
+                normalname: 'Скотт Куігг',
+                date: '9 жовтня 1988 р. (вік 35 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Напівлегка вага , Друга найлегша вага',
+                weight: '53 кг.',
+                height: '173 см.',
+                arm: '178 см.',
+                stats: '35 - 3 - 2',
+                rank: 78,
+                img: 'img/6/box8.jpg',
+            },
+            {
+                name: 'JonoCarroll',
+                normalname: 'Джоно Керрол',
+                date: '12 квітня 1992 р. (вік 32 роки)',
+                nationality: 'Ірландія',
+                stance: 'Лівостороння стійка',
+                category: 'Друга напівлегка вага , Легка вага',
+                weight: '57 кг.',
+                height: '170 см.',
+                arm: '172 см.',
+                stats: '24 - 2 - 1',
+                rank: 78,
+                img: 'img/6/box9.jpg',
+            },
+            {
+                name: 'AnthonyCrolla',
+                normalname: 'Ентоні Кролла',
+                date: '6 листопада 1986 р. (вік 37 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Легка вага , Друга напівлегка вага',
+                weight: '57 кг.',
+                height: '174 см.',
+                arm: '170 см.',
+                stats: '35 - 7 - 3',
+                rank: 79,
+                img: 'img/6/box10.jpg',
+            },
+            {
+                name: 'RyanGarcia',
+                normalname: 'Райан Гарсія',
+                date: '8 серпня 1998 р. (вік 25 років)',
+                nationality: 'США',
+                stance: 'Лівостороння стійка',
+                category: 'Легка вага , Перша напівсередня вага , Друга напівлегка вага',
+                weight: '57 кг.',
+                height: '178 см.',
+                arm: '178 см.',
+                stats: '24 - 1 - 0',
+                rank: 84,
+                img: 'img/6/box11.jpg',
+            },
+            {
+                name: 'GervontaDavis',
+                normalname: 'Джервонта Девіс',
+                date: '7 листопада 1994 р. (вік 29 років)',
+                nationality: 'США',
+                stance: 'Правостороння стійка',
+                category: 'Легка вага , Друга напівлегка вага , Перша напівсередня вага',
+                weight: '60 кг.',
+                height: '166 см.',
+                arm: '170 см.',
+                stats: '29 - 0 - 0',
+                rank: 86,
+                img: 'img/6/box12.jpg',
+            },
+            {
+                name: 'ArturoGatti',
+                normalname: 'Артуро Гатті',
+                date: '15 квітня 1972 р. - 11 липня 2009 р.',
+                nationality: 'Канада',
+                stance: 'Лівостороння стійка',
+                category: 'Напівсередня вага , Перша напівсередня вага , Друга напівлегка вага',
+                weight: '57 кг.',
+                height: '171 см.',
+                arm: '178 см.',
+                stats: '40 - 9 - 31',
+                rank: 83,
+                img: 'img/6/box13.jpg',
+            },
+            {
+                name: 'JordanGill',
+                normalname: 'Джордан Гілл',
+                date: '1 липня 1994 р. (вік 29 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Напівлегка вага , Друга напівлегка вага , Легка вага',
+                weight: '56 кг.',
+                height: '170 см.',
+                arm: '170 см.',
+                stats: '28 - 2 - 1',
+                rank: 77,
+                img: 'img/6/box14.jpg',
+            },
+            {
+                name: 'KevinKelley',
+                normalname: 'Кевін Келлі',
+                date: '29 червня 1967 р. (вік 56 років)',
+                nationality: 'США',
+                stance: 'Лівостороння стійка',
+                category: 'Напівлегка вага , Друга напівлегка вага',
+                weight: '56 кг.',
+                height: '170 см.',
+                arm: '180 см.',
+                stats: '60 - 10 - 2',
+                rank: 84,
+                img: 'img/6/box15.jpg',
+            },
+            {
+                name: 'VasiliyLomachenko',
+                normalname: 'Василь Ломаченко',
+                date: '17 лютого 1988 р. (вік 36 років)',
+                nationality: 'Україна',
+                stance: 'Правостороння стійка',
+                category: 'Легка вага , Напівлегка вага , Друга напівлегка вага',
+                weight: '57 кг.',
+                height: '170 см.',
+                arm: '166 см.',
+                stats: '396 - 1',
+                rank: 90,
+                img: 'img/6/box16.jpg',
+            },
+            {
+                name: 'JoshWarrington',
+                normalname: 'Джош Уоррінгтон',
+                date: '14 листопада 1990 р. (вік 33 роки)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Напівлегка вага',
+                weight: '56 кг.',
+                height: '170 см.',
+                arm: '170 см.',
+                stats: '31 - 3 - 1',
+                rank: 81,
+                img: 'img/6/box17.jpg',
+            },
+            {
+                name: 'TerenceCrawford',
+                normalname: 'Теренс Кроуфорд',
+                date: '28 вересня 1987 р. (вік 36 років)',
+                nationality: 'США',
+                stance: 'Правостороння стійка',
+                category: 'Напівсередня вага , Легка вага , Перша середня вага , Перша напівсередня вага',
+                weight: '61 кг.',
+                height: '173 см.',
+                arm: '188 см.',
+                stats: '40 - 0',
+                rank: 90,
+                img: 'img/6/box18.jpg',
+            },
+            {
+                name: 'RickyHatton',
+                normalname: 'Ріккі Хаттон',
+                date: '6 жовтня 1978 р. (вік 45 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Напівлегка вага',
+                weight: '61 кг.',
+                height: '171 см.',
+                arm: '165 см.',
+                stats: '45 - 3',
+                rank: 84,
+                img: 'img/6/box19.jpg',
+            },
+            {
+                name: 'AmirKhan',
+                normalname: 'Амір Хан',
+                date: '8 грудня 1986 р. (вік 37 років)',
+                nationality: 'Великій Британія',
+                stance: 'Лівостороння стійка',
+                category: 'Напівлегка вага , Друга напівлегка вага',
+                weight: '63 кг.',
+                height: '174 см.',
+                arm: '180 см.',
+                stats: '34 - 6',
+                rank: 87,
+                img: 'img/6/box20.jpg',
+            },
+            {
+                name: 'RayRobinson',
+                normalname: 'Василь Ломаченко',
+                date: ' 3 травня 1921 р. - 12 квітня 1989 р.',
+                nationality: 'США',
+                stance: 'Лівостороння стійка',
+                category: 'Друга напівлегка вага',
+                weight: '73 кг.',
+                height: '180 см.',
+                arm: '184 см.',
+                stats: '128 - 1 - 2',
+                rank: 91,
+                img: 'img/6/box21.jpg',
+            },
+            {
+                name: 'DaltonSmith',
+                normalname: 'Далтон Сміт',
+                date: '8 лютого 1997 р. (вік 27 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Перша напівсередня вага',
+                weight: '61 кг.',
+                height: '176 см.',
+                arm: '178 см.',
+                stats: '16 - 0',
+                rank: 80,
+                img: 'img/6/box22.jpg',
+            },
+            {
+                name: 'JoshTaylor',
+                normalname: 'Джош Тейлор',
+                date: '2 січня 1991 р. (вік 33 роки)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Перша напівсередня вага',
+                weight: '61 кг.',
+                height: '178 см.',
+                arm: '177 см.',
+                stats: '19 - 1',
+                rank: 86,
+                img: 'img/6/box23.jpg',
+            },
+            {
+                name: 'MickyWard',
+                normalname: 'Міккі Уорд',
+                date: '4 жовтня 1965 р. (вік 58 років)',
+                nationality: 'США',
+                stance: 'Лівостороння стійка',
+                category: 'Перша напівсередня вага',
+                weight: '61 кг.',
+                height: '173 см.',
+                arm: '178 см.',
+                stats: '38 - 13',
+                rank: 82,
+                img: 'img/6/box24.jpg',
+            },
+            {
+                name: 'SaulAlvarez',
+                normalname: 'Сауль Альварес',
+                date: '8 липня 1990 р. (вік 33 роки)',
+                nationality: 'Мексика',
+                stance: 'Лівостороння стійка',
+                category: 'Середня вага , Друга середня вага',
+                weight: '66 кг.',
+                height: '173 см.',
+                arm: '179 см.',
+                stats: '60 - 2 - 2',
+                rank: 90,
+                img: 'img/6/box25.jpg',
+            },
+            {
+                name: 'ConorBenn',
+                normalname: 'Конор Бенн',
+                date: '28 вересня 1996 р. (вік 27 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Напівсередня вага , Перша середня вага',
+                weight: '66 кг.',
+                height: '173 см.',
+                arm: '173 см.',
+                stats: '23 - 0',
+                rank: 83,
+                img: 'img/6/box26.jpg',
+            },
+            {
+                name: 'KellBrook',
+                normalname: 'Келл Брук',
+                date: '3 травня 1986 р. (вік 38 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Перша напівсередня вага',
+                weight: '66 кг.',
+                height: '175 см.',
+                arm: '175 см.',
+                stats: '40 - 3',
+                rank: 83,
+                img: 'img/6/box27.jpg',
+            },
+            {
+                name: 'ShawnPorter',
+                normalname: 'Шон Портер',
+                date: '27 жовтня 1987 р. (вік 36 років)',
+                nationality: 'США',
+                stance: 'Лівостороння стійка',
+                category: 'Напівсередня вага',
+                weight: '66 кг.',
+                height: '170 см.',
+                arm: '177 см.',
+                stats: '31 - 4 - 1',
+                rank: 84,
+                img: 'img/6/box28.jpg',
+            },
+            {
+                name: 'NigelBenn',
+                normalname: 'Найджел Бенн',
+                date: '22 січня 1964 р. (вік 60 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Cередня вага',
+                weight: '72 кг.',
+                height: '177 см.',
+                arm: '185 см.',
+                stats: '42 - 5 - 1',
+                rank: 86,
+                img: 'img/6/box29.jpg',
+            },
+            {
+                name: 'JoeCalzaghe',
+                normalname: 'Джо Кальзаге',
+                date: '23 березня 1972 р. (вік 52 роки)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Друга середня вага , Напівважка вага',
+                weight: '75 кг.',
+                height: '183 см.',
+                arm: '185 см.',
+                stats: '46 - 0',
+                rank: 90,
+                img: 'img/6/box30.jpg',
+            },
+            {
+                name: 'ConorBenn',
+                normalname: 'Конор Бенн',
+                date: '28 вересня 1996 р. (вік 27 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Напівсередня вага , Перша середня вага',
+                weight: '72 кг.',
+                height: '173 см.',
+                arm: '173 см.',
+                stats: '23 - 0',
+                rank: 81,
+                img: 'img/6/box31.jpg',
+            },
+            {
+                name: 'LyndonArthur',
+                normalname: 'Ліндон Артур',
+                date: '13 червня 1991 р. (вік 32 роки)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Напівважка вага',
+                weight: '78 кг.',
+                height: '188 см.',
+                arm: '189 см.',
+                stats: '23 - 2',
+                rank: 80,
+                img: 'img/6/box32.jpg',
+            },
+            {
+                name: 'RoyJones',
+                normalname: 'Рой Джонс',
+                date: '16 січня 1969 р. (вік 55 років)',
+                nationality: 'США',
+                stance: 'Лівостороння стійка',
+                category: 'Важка вага , Середня вага',
+                weight: '88 кг.',
+                height: '180 см.',
+                arm: '188 см.',
+                stats: '66 - 10',
+                rank: 90,
+                img: 'img/6/box33.jpg',
+            },
+            {
+                name: 'OleksandrUsyk',
+                normalname: 'Рой Джонс',
+                date: '17 січня 1987 р. (вік 37 років)',
+                nationality: 'Україна',
+                stance: 'Правостороння стійка',
+                category: 'Тяжка вага , Перша важка вага',
+                weight: '100 кг.',
+                height: '191 см.',
+                arm: '198 см.',
+                stats: '21 - 0 - 0',
+                rank: 92,
+                img: 'img/6/box34.jpg',
+            },
+            {
+                name: 'AnthonyJoshua',
+                normalname: 'Ентоні Джошуа',
+                date: '15 жовтня 1989 р. (вік 34 роки)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Важка вага , суперважка вага',
+                weight: '111 кг.',
+                height: '198 см.',
+                arm: '208 см.',
+                stats: '28 - 3',
+                rank: 90,
+                img: 'img/6/box35.jpg',
+            },
+            {
+                name: 'DanielDubois',
+                normalname: 'Даніель Дюбуа',
+                date: ' 6 вересня 1997 р. (вік 26 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Важка вага',
+                weight: '111 кг.',
+                height: '196 см.',
+                arm: '204 см.',
+                stats: '20 - 2',
+                rank: 89,
+                img: 'img/6/box36.jpg',
+            },
+            {
+                name: 'MuhammadAli',
+                normalname: 'Мухаммед Алі',
+                date: '17 січня 1942 р. - 3 червня 2016 р.',
+                nationality: 'США',
+                stance: 'Лівостороння стійка',
+                category: 'Важка вага',
+                weight: '98 кг.',
+                height: '191 см.',
+                arm: '198 см.',
+                stats: '56 - 5',
+                rank: 98,
+                img: 'img/6/box37.jpg',
+            },
+            {
+                name: 'TysonFury',
+                normalname: "Тайсон Ф'юрі",
+                date: '12 серпня 1988 р. (вік 35 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Важка вага',
+                weight: '118 кг.',
+                height: '206 см.',
+                arm: '216 см.',
+                stats: '34 - 1 - 1',
+                rank: 91,
+                img: 'img/6/box38.jpg',
+            },
+            {
+                name: 'LarryHolmes',
+                normalname: 'Ларрі Холмс',
+                date: '3 листопада 1949 р. (вік 74 роки)',
+                nationality: 'США',
+                stance: 'Лівостороння стійка',
+                category: 'Важка вага',
+                weight: '115 кг.',
+                height: '191 см.',
+                arm: '206 см.',
+                stats: '69 - 6',
+                rank: 87,
+                img: 'img/6/box39.jpg',
+            },
+            {
+                name: 'DeontayWilder',
+                normalname: 'Деонтей Уайлдер',
+                date: '22 октября 1985 г. (возраст 38 лет)',
+                nationality: 'США',
+                stance: 'Лівостороння стійка',
+                category: 'Важка вага',
+                weight: '97 кг.',
+                height: '201 см.',
+                arm: '211 см.',
+                stats: '43 - 2 - 1',
+                rank: 88,
+                img: 'img/6/box40.jpg',
+            },
+            {
+                name: 'MikeTyson',
+                normalname: 'Майк Тайсон',
+                date: '30 червня 1966 р. (вік 57 років)',
+                nationality: 'США',
+                stance: 'Лівостороння стійка',
+                category: 'Важка вага',
+                weight: '100 кг.',
+                height: '178 см.',
+                arm: '180 см.',
+                stats: '50 - 6',
+                rank: 95,
+                img: 'img/6/box41.jpg',
+            },
+            {
+                name: 'JakePaul',
+                normalname: 'Джейк Пол',
+                date: '17 січня 1997 р. (вік 27 років)',
+                nationality: 'США',
+                stance: 'Лівостороння стійка',
+                category: 'Перша важка вага',
+                weight: '91 кг.',
+                height: '185 см.',
+                arm: '188 см.',
+                stats: '9 - 1',
+                rank: 89,
+                img: 'img/6/box42.jpg',
+            },
+            {
+                name: 'EvanderHolyfield',
+                normalname: 'Евандер Холіфілд',
+                date: '19 жовтня 1962 р. (вік 61 рік)',
+                nationality: 'США',
+                stance: 'Лівостороння стійка',
+                category: 'Важка вага',
+                weight: '102 кг.',
+                height: '189 см.',
+                arm: '197 см.',
+                stats: '44 - 10 - 2',
+                rank: 91,
+                img: 'img/6/box43.jpg',
+            },
+            {
+                name: 'LennoxLewis',
+                normalname: 'Леннокс Льюїс',
+                date: '2 вересня 1965 р. (вік 58 років)',
+                nationality: 'Великобританія',
+                stance: 'Лівостороння стійка',
+                category: 'Важка вага',
+                weight: '116 кг.',
+                height: '196 см.',
+                arm: '213 см.',
+                stats: '42 - 1 - 1',
+                rank: 94,
+                img: 'img/6/box44.jpg',
+            },
+            {
+                name: 'VitaliKlitschko',
+                normalname: 'Віталій Кличко',
+                date: '19 липня 1971 р. (вік 52 роки)',
+                nationality: 'Україна',
+                stance: 'Лівостороння стійка',
+                category: 'Важка вага',
+                weight: '112 кг.',
+                height: '201 см.',
+                arm: '203 см.',
+                stats: '45 - 2',
+                rank: 93,
+                img: 'img/6/box45.jpg',
+            },
+            {
+                name: 'VolodymyrKlitschko',
+                normalname: 'Володимир Кличко',
+                date: '25 березня 1976 р. (вік 48 років)',
+                nationality: 'Україна',
+                stance: 'Лівостороння стійка',
+                category: 'Важка вага',
+                weight: '109 кг.',
+                height: '198 см.',
+                arm: '206 см.',
+                stats: '64 - 5',
+                rank: 90,
+                img: 'img/6/box46.jpg',
+            },
+        ]
+        let selectLeft = document.querySelector('#select-left');
+        let selectRight = document.querySelector('#select-right');
+
+        function workHard(select, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11) {
+            let choice = select.value
+            for (let i = 0; i < box.length; i++) {
+                if (box[i].name == choice) {
+                    document.querySelector(p1).innerHTML = box[i].normalname
+                    document.querySelector(p2).innerHTML = box[i].date
+                    document.querySelector(p3).innerHTML = box[i].nationality
+                    document.querySelector(p4).innerHTML = box[i].stance
+                    document.querySelector(p5).innerHTML = box[i].category
+                    document.querySelector(p6).innerHTML = box[i].weight
+                    document.querySelector(p7).innerHTML = box[i].height
+                    document.querySelector(p8).innerHTML = box[i].arm
+                    document.querySelector(p9).innerHTML = box[i].stats
+                    document.querySelector(p10).innerHTML = box[i].rank
+                    document.querySelector(p11).src = box[i].img;
+                }
+            }
+        }
+
+        selectLeft.addEventListener('change', () => {
+            workHard(selectLeft, '.name-left', '.date-left',
+                '.nationality-left', '.stance-left', '.category-left',
+                '.weight-left', '.height-left', '.arm-left', '.stats-left', '.rank-left', '.opt-img-left')
+        });
+        selectRight.addEventListener('change', () => {
+            workHard(selectRight, '.name-right', '.date-right',
+                '.nationality-right', '.stance-right', '.category-right',
+                '.weight-right', '.height-right', '.arm-right', '.stats-right', '.rank-right', '.opt-img-right')
+        });
+        window.addEventListener('load', () => {
+            workHard(selectLeft, '.name-left', '.date-left',
+                '.nationality-left', '.stance-left', '.category-left',
+                '.weight-left', '.height-left', '.arm-left', '.stats-left', '.rank-left', '.opt-img-left')
+
+            workHard(selectRight, '.name-right', '.date-right',
+                '.nationality-right', '.stance-right', '.category-right',
+                '.weight-right', '.height-right', '.arm-right', '.stats-right', '.rank-right', '.opt-img-right')
+        })
+    </script>
+</body>
+
+</html>
