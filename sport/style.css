@@ -2,7 +2,7 @@ img {
     width: 100%;
 }
 
-body, html {
+html, body{
     font-family: "Roboto Condensed", sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
